@@ -27,6 +27,7 @@
 
     self.operationLabel.text = sender.currentTitle;
     if ([self.operationLabel.text isEqualToString:@"+"]) {
+        NSLog(@"Hello");
         
     } else if ([self.operationLabel.text isEqualToString:@"-"]){
         
