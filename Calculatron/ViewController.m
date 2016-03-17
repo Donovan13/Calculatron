@@ -9,6 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *addendOneTextField;
+@property (weak, nonatomic) IBOutlet UITextField *addendTwoTextField;
+@property (weak, nonatomic) IBOutlet UILabel *operationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *answerLabel;
 
 @end
 
@@ -16,12 +20,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)onButtonTapped:(UIButton *)sender {
+    
+    
 }
 
 @end

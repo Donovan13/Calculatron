@@ -65,18 +65,30 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3m-dx-UhE">
                                         <rect key="frame" x="20" y="20" width="46" height="30"/>
                                         <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5xb-Hx-6en"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Unr-f7-zvq">
                                         <rect key="frame" x="108" y="20" width="46" height="30"/>
                                         <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PhC-fz-0la"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3h-u3-5aQ">
                                         <rect key="frame" x="209" y="20" width="46" height="30"/>
                                         <state key="normal" title="x"/>
+                                        <connections>
+                                            <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kF5-cy-1o2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SX8-qg-3kI">
                                         <rect key="frame" x="305" y="20" width="46" height="30"/>
                                         <state key="normal" title="/"/>
+                                        <connections>
+                                            <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1eO-5X-m8s"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -147,6 +159,12 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="addendOneTextField" destination="EAE-nb-9V0" id="QqX-54-Ynl"/>
+                        <outlet property="addendTwoTextField" destination="vJL-Hd-CIP" id="d2C-bV-Hfa"/>
+                        <outlet property="answerLabel" destination="FIN-1g-1Zt" id="Tcu-lr-nw7"/>
+                        <outlet property="operationLabel" destination="ei4-1H-pJe" id="A34-kH-XPj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
