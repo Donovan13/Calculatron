@@ -20,7 +20,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"hi Kyle");
 }
 - (IBAction)onButtonTapped:(UIButton *)sender {
     double addendOne = self.addendOneTextField.text.doubleValue;
@@ -28,14 +27,13 @@
 
     self.operationLabel.text = sender.currentTitle;
     if ([self.operationLabel.text isEqualToString:@"+"]) {
-        NSLog(@"yo");
-        
+        self.answerLabel.text = [NSString stringWithFormat:@"%f", addendOne + addendTwo];
     } else if ([self.operationLabel.text isEqualToString:@"-"]){
-        
+        self.answerLabel.text = [NSString stringWithFormat:@"%f", addendOne - addendTwo];
     } else if ([self.operationLabel.text isEqualToString:@"x"]){
-        
+        self.answerLabel.text = [NSString stringWithFormat:@"%f", addendOne * addendTwo];
     } else {
-        
+        self.answerLabel.text = [NSString stringWithFormat:@"%f", addendOne / addendTwo];
     }
 
     
