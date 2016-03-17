@@ -24,6 +24,19 @@
 - (IBAction)onButtonTapped:(UIButton *)sender {
     double addendOne = self.addendOneTextField.text.doubleValue;
     double addendTwo = self.addendTwoTextField.text.doubleValue;
+
+    self.operationLabel.text = sender.currentTitle;
+    if ([self.operationLabel.text isEqualToString:@"+"]) {
+        
+    } else if ([self.operationLabel.text isEqualToString:@"-"]){
+        
+    } else if ([self.operationLabel.text isEqualToString:@"x"]){
+        
+    } else {
+        
+    }
+
+    
 }
 
 @end
