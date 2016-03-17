@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog("@hi")
+    NSLog(@"hi Kyle");
 }
 - (IBAction)onButtonTapped:(UIButton *)sender {
     double addendOne = self.addendOneTextField.text.doubleValue;
