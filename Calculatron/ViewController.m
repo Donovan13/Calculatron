@@ -22,8 +22,8 @@
     [super viewDidLoad];
 }
 - (IBAction)onButtonTapped:(UIButton *)sender {
-    
-    
+    double addendOne = self.addendOneTextField.text.doubleValue;
+    double addendTwo = self.addendTwoTextField.text.doubleValue;
 }
 
 @end
